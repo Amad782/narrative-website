@@ -78,9 +78,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
+  font-family: "Inter";
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
@@ -235,14 +233,8 @@ sup {
   top: -0.5em;
 }
 
-a {
-  color: #2937f0;
-  text-decoration: underline;
-}
-a:hover {
-  color: #212cc0;
-  font-size: 17px;
-}
+
+
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
@@ -7675,6 +7667,7 @@ textarea.form-control-lg {
 
 .text-center {
   text-align: center !important;
+  margin-top: 200px;
 }
 
 .text-decoration-none {
@@ -11299,7 +11292,10 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background-color:  #82C8FA !important;
+  background-color: #F1F1F1 !important;
+  width: 1400px;
+  height: 700px;
+  margin-left: auto;
 }
 
 .font-alt {
@@ -11343,7 +11339,7 @@ section {
   color: #212529;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #31A1F1;
+  color: #000;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #2A85C6;
@@ -11550,16 +11546,42 @@ footer a:hover, footer a:active, footer a:focus {
 
   padding-top: 9.5rem;
   padding-bottom: 5rem;
-  background-image: url(../assets/img/vrhands.jpg);
+  background-image: url(../assets/img/hero.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
   height: 100vh;
-  
-  
-  
-  
+  margin-bottom: -4px;
+}
+
+.hero-section{
+  max-width: 788px;
+  margin-left: 120px;
+}
+
+.hero-btn{
+  background-color: #2B2B2B;
+  border: none;
+  border-radius: 50px;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero-btn:hover{
+  background-color: white;
+  color: black;
+}
+
+
+ 
+
+
+
+.hero-h1{
+  font-size: 96px;
+  font-weight: bolder;
 }
 
 .hero-text-container{
@@ -11573,102 +11595,8 @@ footer a:hover, footer a:active, footer a:focus {
   width: 300px;
   
   
-  
-  
-  
 }
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-  .homepage-hero {
-    background-size: cover; /* Cover the entire hero section */
-    background-position: center; /* Center the image */
-    height: 100vh; /* Adjust the height as needed */
-  }
-  
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .homepage-hero {
-    background-size: cover; /* Cover the entire hero section */
-    background-position: center; /* Center the image */
-    height: 100vh; /* Adjust the height as needed */
-  }
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .homepage-hero {
-    background-size: cover; /* Cover the entire hero section */
-    background-position: center; /* Center the image */
-    height: 100vh; /* Adjust the height as needed */
-  }
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .homepage-hero {
-    background-size: cover; /* Cover the entire hero section */
-    background-position: center; /* Center the image */
-    height: 100vh; /* Adjust the height as needed */
-  }
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .homepage-hero {
-    background-size: cover; /* Cover the entire hero section */
-    background-position: center; /* Center the image */
-    height: 100vh; /* Adjust the height as needed */
-  }
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-   .homepage-hero {
-    background-size: cover; /* Cover the entire hero section */
-    background-position: center; /* Center the image */
-    height: 100vh; /* Adjust the height as needed */
-  }
-  /* CSS */
-  
-}
 
 .masthead .masthead-device-mockup {
   display: flex;
@@ -11749,3 +11677,58 @@ footer a:hover, footer a:active, footer a:focus {
     max-width: 17rem;
   }
 }
+
+
+/*menu mobile*/
+
+@media only screen and (max-width: 990px) {
+ 
+
+  .mobile-collapse{
+    height: 100vh;
+  }
+
+  .mobile-navabr{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding-top: 400px;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 2rem;
+  }
+  
+
+}
+
+
+
+
+/*---------------------- about this guide ------------------ */
+.container-about-this-guide{
+  width: 500px;
+  margin-left: 71px;
+  
+}
+
+.container-about-this-guide h2{
+  font-size: 128px;
+  width: 1136px;
+}
+
+.container-about-this-guide p{
+  font-size: 36px;
+  width: 1150px;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+/*---------------------- about this guide ------------------ */
