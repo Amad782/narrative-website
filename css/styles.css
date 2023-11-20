@@ -9676,7 +9676,7 @@ textarea.form-control-lg {
   }
 
   .mb-lg-0 {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
   }
 
   .mb-lg-1 {
@@ -11320,7 +11320,7 @@ section {
 }
  
 .logo{
-  height: 75px;
+  height: 50px;
   width: auto;
 }
 #mainNav {
@@ -11340,10 +11340,11 @@ section {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #000;
+  font-weight: 800;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #2A85C6;
-  font-weight: bold;
+  
+  font-weight: 400;
   
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
@@ -11553,6 +11554,7 @@ footer a:hover, footer a:active, footer a:focus {
   width: auto;
   height: 100vh;
   margin-bottom: -4px;
+  margin-top: 80px;
 }
 
 .hero-section{
@@ -11564,7 +11566,7 @@ footer a:hover, footer a:active, footer a:focus {
   background-color: #2B2B2B;
   border: none;
   border-radius: 50px;
-  padding: 20px;
+  padding: 20px 30px;
   color: white;
   text-decoration: none;
 }
@@ -11572,6 +11574,8 @@ footer a:hover, footer a:active, footer a:focus {
 .hero-btn:hover{
   background-color: white;
   color: black;
+  
+  transition: color 0.3s ease, background-color 0.3s ease 0.1s;
 }
 
 
@@ -11582,6 +11586,7 @@ footer a:hover, footer a:active, footer a:focus {
 .hero-h1{
   font-size: 96px;
   font-weight: bolder;
+  margin-bottom: 50px;
 }
 
 .hero-text-container{
@@ -11708,9 +11713,11 @@ footer a:hover, footer a:active, footer a:focus {
 
 
 /*---------------------- about this guide ------------------ */
+
 .container-about-this-guide{
   width: 500px;
   margin-left: 71px;
+
   
 }
 
@@ -11730,5 +11737,103 @@ footer a:hover, footer a:active, footer a:focus {
 
 
 
+/* -------------------- video section ---------------------- */
 
-/*---------------------- about this guide ------------------ */
+
+
+
+.video-header, h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px 30px 0px;
+  font-size: 50px;
+  
+}
+.homepage_video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px 30px 0px;
+
+
+}
+
+.video-description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-description{
+  font-size: 23px;
+  width: 1400px;
+  height: 200px;
+}
+
+.vid-des-ur{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+/* --------------------wellness section  ---------------------- */
+.wellness-header{
+  font-weight: bold;
+  font-size: 50px;
+  text-align: start;
+  justify-content: left;
+}
+.wellness-paragraph{
+  margin-bottom: 10px;
+}
+/* -------- */
+
+
+
+/* --------------------explore section  ---------------------- */
+.explore_section{
+  border: 1px solid red;
+  
+}
+
+.explore_boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  border: 2px solid blue;
+}
+
+.explorebx{
+  margin: 65px;
+}
+
+.explore_border{
+  border: 0.5px solid gray;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+  padding-bottom: 50px;
+
+}
+.explore_title{
+  font-weight:500;
+  font-size: 128px;
+}
+
+.explore_cards{
+  border: 0.5px solid #7E7E7E;
+  display: flex;
+  
+}
+
+
+
+
+/* -------- */
