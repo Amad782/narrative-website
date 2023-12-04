@@ -85,6 +85,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
 
 hr {
@@ -121,7 +122,9 @@ h2, .h2 {
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 140px;
+    width: 80%;
+    text-align: center;
   }
 }
 
@@ -493,7 +496,10 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 5rem;
+    font-size: 100px;
+    margin: 200px auto;
+    width: 80%;
+  
   }
 }
 
@@ -6516,7 +6522,6 @@ textarea.form-control-lg {
 }
 
 .fixed-top {
-  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -11291,12 +11296,15 @@ html {
   background-color: #000 !important;
 }
 
-.bg-gradient-primary-to-secondary {
+.bg-gradient-primary-to-secondary1 {
   background-color: #F1F1F1 !important;
   width: 1400px;
   height: 700px;
   margin-left: auto;
 }
+
+
+
 
 .font-alt {
   font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
@@ -11326,6 +11334,7 @@ section {
 #mainNav {
   padding-top: 1rem;
   background-color: #fff;
+  padding: 30px;
 }
 #mainNav .navbar-brand {
   font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11554,7 +11563,6 @@ footer a:hover, footer a:active, footer a:focus {
   width: auto;
   height: 100vh;
   margin-bottom: -4px;
-  margin-top: 80px;
 }
 
 .hero-section{
@@ -11566,7 +11574,7 @@ footer a:hover, footer a:active, footer a:focus {
   background-color: #2B2B2B;
   border: none;
   border-radius: 50px;
-  padding: 20px 30px;
+  padding: 20px 50px;
   color: white;
   text-decoration: none;
 }
@@ -11684,30 +11692,7 @@ footer a:hover, footer a:active, footer a:focus {
 }
 
 
-/*menu mobile*/
 
-@media only screen and (max-width: 990px) {
- 
-
-  .mobile-collapse{
-    height: 100vh;
-  }
-
-  .mobile-navabr{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    gap: 100px;
-    padding-top: 400px;
-  }
-
-  #mainNav .navbar-nav .nav-item .nav-link {
-    color: black;
-    font-size: 2rem;
-  }
-  
-
-}
 
 
 
@@ -11798,7 +11783,6 @@ footer a:hover, footer a:active, footer a:focus {
 
 /* --------------------explore section  ---------------------- */
 .explore_section{
-  border: 1px solid red;
   
 }
 
@@ -11808,7 +11792,6 @@ footer a:hover, footer a:active, footer a:focus {
   align-items: center;
   text-align: center;
   margin: 10px;
-  border: 2px solid blue;
 }
 
 .explorebx{
@@ -11837,3 +11820,243 @@ footer a:hover, footer a:active, footer a:focus {
 
 
 /* -------- */
+
+
+
+/* ----intro page - why vr matters section ---- */
+
+.btn-hero-pg1{
+  position: relative; 
+  top: 150px;
+  left: 1000px;
+
+}
+
+
+ /* -------- */
+
+
+/* ----footer ---- */
+
+  .guide-text-footer{
+    font-size: 4em;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 100px;
+    text-align: start;
+    
+  } 
+
+ .social-contact_us{
+  background-color: #212121;
+  color: white;
+  height: 100vh;
+ }
+
+
+ .social-contact_us_container-icon{
+  text-align:center;
+  margin:50px;
+  display: flex;
+  flex-direction: column-reverse;
+    align-items: end;
+    row-gap: 2em;
+}
+i {
+  font-size:40px;
+  padding: 20px;
+} 
+
+
+
+
+.facebook {
+  background-image: url('facebook-icon.png');
+
+}
+.faceb{
+  margin: 10px;
+  color: white;
+}
+
+
+.twitter {
+  background-image: url('twitter-icon.png');
+  margin-right: 24px;
+}
+
+.twitt{
+  margin: 10px;
+  color: white;
+}
+
+
+.instagram {
+  background-image: url('instagram-icon.png');
+  color: white;
+}
+.insta{
+  margin: 10px;
+}
+.faceb2,
+.insta2,
+.twitt2{
+  color: black;
+}
+
+.social-contact_us_container-icon2{
+  text-align: left;
+  margin-top: -65px;
+  
+}
+
+
+/* Media query for responsive design */
+/* @media (max-width: 768px) {
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+} */
+
+/*------------------*/
+
+
+
+
+
+/* ----contact-us ---- */
+
+.contact_us{
+
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+ /* -------- */
+
+ .vr_matters{
+  background-color: #F1F1F1 !important;
+  width: 1400px;
+  height: 100vh;
+ }
+
+ .vr_m_container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .vr_m_container p {
+  font-size: 26px;
+  width: 1100px;
+  margin: 20px;
+  text-align: left;
+ }
+
+
+
+ .footer_text_bottom{
+  font-size: 300px;
+  display: flex;
+  justify-content: center;
+ }
+
+
+
+
+
+.social-contact_us_container-icon{
+  text-align:center;
+  margin:50px;
+}
+i {
+  font-size:40px;
+  vertical-align:middle;
+  color: #000;
+} 
+
+
+
+
+/*menu mobile*/
+
+@media only screen and (max-width: 990px) {
+ 
+ 
+  /*Phone menu*/
+  .bi-list{
+    padding: 0;
+  }
+
+  .con{
+    
+      padding-right: 0rem !important;
+      padding-left: 0rem !important;
+  }
+
+  .mobile-collapse{
+    min-height: 100svh;
+  }
+
+  .mobile-navabr{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 2rem;
+  }
+  
+  /*hero section*/
+  .homepage-hero{
+    height: 254px;
+  }
+
+  .hero-section{
+   margin: 15px;
+   position: relative;
+   top: -125px;
+  }
+
+  .hero-h1{
+    width: 200px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .hero-btn{
+    padding: 10px;
+    position: relative;
+    top: -20px;
+    font-size: 0.8rem;
+  }
+
+  /*------------------------------part1 -end ---------*/
+
+  .bg-gradient-primary-to-secondary1{
+    width: 371px;
+    height: 353px;
+  }
+
+  .container-about-this-guide h2{
+    font-size: 36px;
+    width: 333px;
+    height: 65px;
+  }
+
+  .container-about-this-guide p{
+    font-size: 14px;
+    width: 238px;
+    height: 185px;
+  }
+
+
+}
+ 
