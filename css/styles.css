@@ -78,6 +78,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: "Inter";
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
@@ -85,7 +86,6 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  overflow-x: hidden;
 }
 
 hr {
@@ -11297,8 +11297,7 @@ html {
 }
 
 .bg-gradient-primary-to-secondary1 {
-  background-color: #F1F1F1 !important;
-  width: 1400px;
+  background-color: #F1F1F1 ;
   height: 700px;
   margin-left: auto;
 }
@@ -11699,16 +11698,24 @@ footer a:hover, footer a:active, footer a:focus {
 
 /*---------------------- about this guide ------------------ */
 
+
+.bg-gradient-primary-to-secondary1 {
+  background-color: #F1F1F1;
+  height: 900px;
+  width: 1411px;
+  margin-left: auto;
+}
+
 .container-about-this-guide{
   width: 500px;
   margin-left: 71px;
 
-  
 }
 
 .container-about-this-guide h2{
   font-size: 128px;
   width: 1136px;
+  text-align: left;
 }
 
 .container-about-this-guide p{
@@ -11987,6 +11994,10 @@ i {
 
 @media only screen and (max-width: 990px) {
  
+  .body{
+    margin: 0;
+    padding: 0;
+  }
  
   /*Phone menu*/
   .bi-list{
@@ -11999,9 +12010,11 @@ i {
       padding-left: 0rem !important;
   }
 
+  /*
   .mobile-collapse{
-    min-height: 100svh;
+   
   }
+  */
 
   .mobile-navabr{
     justify-content: center;
@@ -12039,11 +12052,19 @@ i {
   }
 
   /*------------------------------part1 -end ---------*/
-
+  /*about this guide*/
   .bg-gradient-primary-to-secondary1{
     width: 371px;
     height: 353px;
   }
+
+
+  .container-about-this-guide{
+    width: 0px;
+    margin-left: 11px;
+  
+  }
+  
 
   .container-about-this-guide h2{
     font-size: 36px;
@@ -12057,6 +12078,26 @@ i {
     height: 185px;
   }
 
+   /*------------------------------about this guide -end ---------*/
+  /*video section*/
 
-}
+  .video-header, h3{
+    margin: 50px 0px 20px 20px;
+    font-size: 30px;
+    
+  }
+
+  iframe {
+    height: 260px;
+    
+  }
+  .video-description{
+    font-size: 13px;
+   margin: 10px 20px 0px 20px;
+  }
+  .vid-des-ur{
+    font-size: 15px;
+  }
+  
  
+}
