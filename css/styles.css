@@ -11316,8 +11316,7 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
-aside,
-section {
+aside {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -12016,6 +12015,18 @@ i {
   }
   */
 
+  #mainNav{
+    padding: 20px;
+  }
+
+  .logo{
+    height: 40px;
+  }
+
+  i {
+    font-size: 20px;
+  }
+
   .mobile-navabr{
     justify-content: center;
     display: flex;
@@ -12039,15 +12050,19 @@ i {
   }
 
   .hero-h1{
-    width: 200px;
-    font-size: 22px;
+    width: 233px;
+    font-size: 30px;
     font-weight: bold;
+    position: relative;
+    top: -25px;
+    left: 6px;
   }
 
   .hero-btn{
-    padding: 10px;
+    padding: 10px 15px;
     position: relative;
-    top: -20px;
+    top: -50px;
+    left: 6px;
     font-size: 0.8rem;
   }
 
@@ -12070,18 +12085,21 @@ i {
     font-size: 36px;
     width: 333px;
     height: 65px;
+    padding-top: 20px;
+    padding-left: 20px;
   }
 
   .container-about-this-guide p{
     font-size: 14px;
     width: 238px;
     height: 185px;
+    margin-left: 20px;
   }
 
    /*------------------------------about this guide -end ---------*/
   /*video section*/
 
-  .video-header, h3{
+  .video-header, .vid-h3{
     margin: 50px 0px 20px 20px;
     font-size: 30px;
     
@@ -12098,6 +12116,133 @@ i {
   .vid-des-ur{
     font-size: 15px;
   }
+
+
+  /*------------------------more-info-sec*/
+  .more-info-sec{
+    text-align: center;
+    background-color: #F1F1F1;
+    margin: 23px;
+    border-radius: 18px;
+    padding: 6px;
+  }
+
+  .wellness-header{
+    text-align: center;
+    font-weight: 600;
+    justify-content: center;
+    font-size: 40px;
+  }
   
+  .wellness-p{
+    font-size: 15px;
+    padding: 0px 20px 30px 20px;
+  }
  
+  .learn-more-btn{
+    padding: 9px 15px;
+    font-size: 14px;
+    position: relative;
+    left: 115px;
+    top: -20px;
+  }
+
+
+  .wellness-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .wellness_img_homepage{
+    border-radius: 20px;
+    min-width: 384px;
+    padding: 20px;
+    
+  }
+
+}
+
+
+
+/*tablet version --------------------------------------*/
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    margin: 92px;
+    position: relative;
+    top: -127px;
+}
+.hero-section h1{
+  width: 345px;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    top: -25px;
+    left: 6px;
+}
+
+
+  .homepage-hero {
+    height: 416px;
+}
+
+  .bg-gradient-primary-to-secondary1 {
+    width: 674px;
+  }
+
+  .container-about-this-guide h2 {
+    font-size: 66px;
+    width: 520px;
+  }
+
+  .container-about-this-guide p {
+    font-size: 20px;
+    width: 562px;
+    margin-top: 50px;
+}
+
+iframe {
+  height:450px;
+  padding: 20px;
+  
+}
+
+.homepage_video {
+  margin: 0;
+}
+
+.video-description{
+  height: 100px;
+  margin: 0 35px;
+}
+
+.more-info-sec {
+  
+  margin: 0 auto;
+ 
+  height: 522px;
+  width: 578px;
+}
+.wellness_img_homepage {
+  width: 613px;
+  height: 522px;
+}
+
+.wellness-header{
+  font-size: 60px;
+}
+
+.wellness-p{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.learn-more-btn {
+  position: static;
+}
+}
+
+
+@media only screen and (min-width: 991px) {
+
 }
