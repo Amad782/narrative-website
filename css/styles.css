@@ -11778,8 +11778,17 @@ footer a:hover, footer a:active, footer a:focus {
 
 /* --------------------wellness section  ---------------------- */
 
+
+.bs-container{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .welness-container{
   background-color:#F1F1F1 ;
+  border-radius: 10px;
+  padding-top: 5px;
 }
 
 .wellness-header{
@@ -11787,6 +11796,7 @@ footer a:hover, footer a:active, footer a:focus {
   font-size: 50px;
   text-align: start;
   justify-content: left;
+  margin: 10px;
 }
 .wellness-paragraph{
   margin-bottom: 10px;
@@ -11809,6 +11819,12 @@ footer a:hover, footer a:active, footer a:focus {
   margin: 65px;
 }
 
+.explore_section-h3{
+  font-size: 128px;
+}
+
+
+
 .explore_border{
   border: 0.5px solid gray;
   border-bottom-left-radius: 2%;
@@ -11816,6 +11832,8 @@ footer a:hover, footer a:active, footer a:focus {
   padding-bottom: 50px;
 
 }
+
+
 .explore_title{
   font-weight:500;
   font-size: 128px;
@@ -12078,6 +12096,10 @@ i {
     height: 250px;
   }
 
+  .welness-container{
+    width:340px;
+  }
+
 
   .container-about-this-guide{
     width: 0px;
@@ -12146,7 +12168,6 @@ i {
     padding: 9px 15px;
     font-size: 14px;
     position: relative;
-    left: 115px;
     top: -20px;
   }
 
@@ -12159,7 +12180,7 @@ i {
   }
   .wellness_img_homepage{
     border-radius: 20px;
-    min-width: 384px;
+    width: 384px;
     padding: 20px;
     
   }
@@ -12183,6 +12204,16 @@ i {
 
 .container-about-this-guide p {
   width: 400px;
+}
+
+.why-now h3{
+  justify-content: left;
+}
+
+.why-now-p{
+  font-size: 34px;
+  width: 1109px;
+  padding-bottom: 23px;
 }
 
 }
@@ -12270,6 +12301,11 @@ iframe {
     display: flex;
   }
 
+  .welness-container{
+    width: 556px;
+    height: 522px;
+  }
+
 .wellness_img_homepage {
   width: 613px;
   height: 522px;
@@ -12313,6 +12349,13 @@ iframe {
   border-radius: 10px;
 }
 
+
+.why-now{
+  margin: 0 auto;
+  padding-left: 154px;
+  justify-content: left;
+}
+
 }
 
 
@@ -12322,6 +12365,7 @@ iframe {
     display: flex;
     margin: auto;
     justify-content: center;
+    flex-direction: row;
   }
   
   
@@ -12331,7 +12375,7 @@ iframe {
   
   .welness-container{
    
-      width: 713px;
+      width:664px;
       height: 563px;
       border-radius: 10px;
       min-width: 384px;
@@ -12353,6 +12397,19 @@ iframe {
     margin-top: 47px;
   }
   
+  }
+
+
+  @media only screen and (min-width: 1500px) {
+    .welness-container{
+   
+      width:671px;
+      height: 563px;
+      border-radius: 10px;
+      min-width: 384px;
+      padding: 20px;
+      margin-top: 17px;
+  }
   }
 
 /*desktop*/
@@ -12404,6 +12461,21 @@ iframe {
 
   .more-info-sec{
     display: flex;
+  }
+
+  .vid-section{
+    margin-bottom: 120px;
+    margin-top: 120px;
+  }
+
+
+  .why-now h3{
+    font-size: 128px;
+  }
+
+  .why-now-p{
+    font-size: 36px;
+    width: 1109px;
   }
 }
 
