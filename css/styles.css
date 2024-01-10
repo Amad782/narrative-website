@@ -68,6 +68,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -87,6 +88,8 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+
 
 hr {
   margin: 1rem 0;
@@ -11695,7 +11698,6 @@ footer a:hover, footer a:active, footer a:focus {
 
 
 
-
 /*---------------------- about this guide ------------------ */
 
 
@@ -12397,7 +12399,6 @@ i {
   .vrx-h3{
     font-size: 128px;
     justify-content: flex-start;
-    text-align: end;
   }
   
   .vrx-h4{
@@ -12674,17 +12675,17 @@ i {
 
 /*page3*/
 .vrx-h1{
-  font-size: 96px;
+  font-size: 50px;
 }
 
 .vrx-h2{
-  font-size: 96px;
+  font-size: 50px;
 }
 .vrx-h3{
-  font-size: 96px;
+  font-size: 50px;
 }
 .vrx-h4{
-  font-size: 96px;
+  font-size: 50px;
 }
 
 .vrx-p{
@@ -12713,13 +12714,10 @@ i {
   width: 348px;
 }
 
-.vr-f-step{
-  margin-left: 100px;
-}
 
 
 .vr-steps{
-  padding-left: 100px;
+  padding-left: 50px;
 }
 
 .vr-steps .p-steps{
@@ -12887,12 +12885,22 @@ iframe {
   font-size: 92px;
 }
 
+.vrx-h2{
+  font-size: 92px;
+}
+.vrx-h3{
+  font-size: 92px;
+}
+.vrx-h4{
+  font-size: 92px;
+}
 .p-steps {
   width: 648px;
 }
 
 .vr-f-step{
   margin-top: 174px;
+  text-align: center;
 }
 
 .vr-steps .vr-steps-h3{
@@ -12984,6 +12992,11 @@ iframe {
     justify-content: center;
     flex-direction: row;
   }
+
+  .vrx-p{
+    font-size: 36px;
+  }
+  
   
   
   .video-description{
@@ -13076,16 +13089,10 @@ text-align: center;
   padding-bottom: 136px;
 }
 
-.vrx-p{
-  width: 721px;
-  margin: 0 auto;
-}
 
 .vrx-h2{
   width: 700px;
   font-size: 128px;
-  padding-top: 259px;
-
 }
 
 .vrx-h3{
@@ -13111,12 +13118,12 @@ text-align: center;
   font-size: 96px;
  text-align: left;
  justify-content: left;
- width: 866px;
+ width: 939px;
 }
 
 .vr-steps .p-steps{
   width:838px;
-  text-align: left;
+  font-size: 36px;
 }
 .img-vr-steps{
   border: 2px solid red;
@@ -13136,7 +13143,25 @@ text-align: center;
 
 }
 
+
+
+/*page3*/
+
+#physicalHealth-p{
+  width: 968px;
+}
+
+#therapeutic-h3 {
+
+  text-align: left;
+  width: 1006px;
+
   }
+
+  #learning-h3{
+    width: 1050px;
+  }
+}
   
   
 
@@ -13151,6 +13176,13 @@ text-align: center;
       padding: 20px;
   }
 
+  #physicalHealth{
+    margin: 0px auto;
+    justify-content: normal;
+    position: relative;
+    left: 280px;
+  }
+
   .vr_matters{
     width: 1400px;
   }
@@ -13159,6 +13191,27 @@ text-align: center;
     left: 952px;
     position: sticky;
     top: 39px;
+  }
+
+  .soc-div{
+    display: flex;
+  }
+
+  .soc-div2{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .img-vr-steps{
+    margin-right: 100px;
+  }
+
+  #img-first-vr{
+    margin-left: 100px;
+  }
+
+  #social-in-p{
+    margin-bottom: 100px;
   }
 }
 
@@ -13269,4 +13322,3 @@ text-align: center;
   }
 
 }
-
