@@ -11589,10 +11589,6 @@ footer a:hover, footer a:active, footer a:focus {
 }
 
 
- 
-
-
-
 .hero-h1{
   font-size: 96px;
   font-weight: bolder;
@@ -12011,6 +12007,11 @@ i {
 } 
 
 
+#mapi{
+  margin: 0 auto;
+  display: flex;
+}
+
 /*page-1*/
 .what_is_vr {
   width: 907px;
@@ -12056,15 +12057,18 @@ i {
   margin: 100px auto;
   width: 1149px;
   color: black;
+  
 }
 
 #accordian li{
-  list-style: none;
+  margin-top: 20px;
+  font-size: 24px;
   width: 100%;
-  margin-bottom:10px ;
+  margin-bottom:20px ;
   background-color: white;
   padding: 10px;
   border-radius: 4px;
+  list-style: none;
 }
 
 #accordian li label{
@@ -12099,11 +12103,18 @@ i {
 }
 
 #accordian label + input[type=radio]:checked + .content {
-  max-height: 800px;
+  max-height: 5000px;
 }
 
 .content h4{
   font-size: 32px;
+}
+
+.content ul{
+  padding: 0;
+}
+.content ul li{
+  padding: 0;
 }
 
 .content .small-box{
@@ -12117,6 +12128,20 @@ i {
 
 
 /*menu mobile*/
+
+.map{
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+.vr-steps {
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
 
 
 
@@ -12422,7 +12447,7 @@ i {
     text-align: left;
   }
   .img-vr-steps{
-    border: 2px solid red;
+
     width: 534px;
     padding-right: 100px;
     height: 396px;
@@ -12432,7 +12457,6 @@ i {
   
   
   .long-img-vr-steps{
-    border: 2px solid red;
     width: 867px;
     height: 450px;
     display: flex;
@@ -12497,6 +12521,18 @@ i {
   .content h4{
     font-size: 1.5rem;
   }
+
+  .why-now{
+    margin: 30px;
+  }
+
+  .explore_section-h3{
+    font-size: 50px;
+  }
+
+  #mapi{
+    width: 200px;
+  }
 }
 
 @media only screen and (min-width: 250px) {
@@ -12540,12 +12576,43 @@ i {
   .img-vr-steps{
     width: 250px;
   }
+
+  .explore_boxes{
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .explorebx{
+    margin: 0;
+    padding: 20px;
+  }
+
+  #mapi{
+    width: 200px;
+  }
+
+  .footer_text_bottom {
+    font-size: 50px;
+  }
+
+  .guide-text-footer{
+    font-size: 2em;
+  }
+
 }
 
 
 
 @media only screen and (min-width: 350px) {
 
+
+  .guide-text-footer {
+    font-size: 4em;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 100px;
+    text-align: start;
+}
 
   .vr-f-step{
     margin-left: auto;
@@ -12587,6 +12654,24 @@ i {
     width: 350px;
   }
 
+  #exp-btn {
+    
+      position: relative;
+      left: 3px;
+      font-size: 0.8rem;
+      top: -57px;
+      padding: 15px 30px;
+  }
+
+  #mapi{
+    width: 300px;
+  }
+
+  .footer_text_bottom {
+    font-size: 60px;
+  }
+
+
   
 }
 
@@ -12615,8 +12700,16 @@ i {
 }
 
 .why-now-p{
-  font-size: 34px;
+  font-size: 36px;
   padding-bottom: 23px;
+}
+
+.why-now-p{
+  font-size: 20px;
+}
+
+.explore_section-h3 {
+  font-size: 50px;
 }
 
 /*page-2*/
@@ -12654,10 +12747,12 @@ i {
   /*page2*/
 .getting-started_vr_h3 {
   font-size: 50px;
+  top: 80px;
+  position: relative;
 }
 
 .getting-started_vr_p {
-  font-size: 26px;
+  font-size: 1rem;
   margin-top: 111px;
   text-align: left;
 }
@@ -12724,6 +12819,36 @@ i {
   width: 450px;
 }
 
+.hero-h1 {
+  width: 233px;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  top: -29px;
+  left: -38px;
+}
+
+#exp-btn {
+  left: -42px;
+  top: -33px;
+  padding: 20px 50px;
+}
+
+.hero-h1 {
+  font-size: 36px;
+  width: 300px;
+}
+
+#mapi{
+  width: 400px;
+}
+
+.footer_text_bottom {
+  font-size: 80px;
+}
+
+
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -12733,6 +12858,14 @@ i {
     position: relative;
     top: -170px;
   }
+
+  .guide-text-footer {
+    font-size: 4em;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 100px;
+    text-align: start;
+}
 
   .why-now{
     margin: 10px 20px 0px 20px;
@@ -12777,7 +12910,43 @@ i {
   height: 300px
 }
 
+#ex-btn{
+  left: 0px;
+  top: -7px;
+}
 
+.homepage_vid_prop{
+  height: 782px;
+}
+
+.why-now-p{
+  font-size: 20px;
+}
+
+.explore_section-h3 {
+  font-size: 50px;
+}
+
+.homepage_vid_prop{
+  height: 500px;
+  width: 500px;
+}
+
+
+.hero-h1{
+  font-size: 36px;
+}
+
+#exp-btn {
+  position: relative;
+  left: -40px;
+  font-size: 0.8rem;
+  top: -44px;
+}
+
+.footer_text_bottom {
+  font-size: 100px;
+}
 
 }
 
@@ -12790,13 +12959,56 @@ i {
     position: relative;
     top: -127px;
 }
+
+.guide-text-footer {
+  font-size: 4em;
+  width: 250px;
+  margin-left: 50px;
+  margin-top: 100px;
+  text-align: start;
+}
+
+.explore_boxes {
+  width: 500px;
+}
+
+.explorebx{
+  width: 476px;
+}
+
+.explorebx img{
+  width: 437px;
+  height: 340px;
+}
+
+#exp-btn {
+  position: relative;
+  left: 2px;
+  font-size: 0.8rem;
+  top: -37px;
+}
+
+.homepage_vid_prop{
+  height: 600px;
+  width: 800px;
+}
 .hero-section h1{
   width: 345px;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     position: relative;
     top: -25px;
     left: 6px;
+}
+
+
+#gt-btn{
+  top: 30px;
+  left: 0px;
+}
+
+.hero-btn{
+  top: -60px;
 }
 
 
@@ -12811,7 +13023,7 @@ i {
 
   
   .container-about-this-guide h2 {
-    font-size: 66px;
+    font-size: 50px;
     width: 520px;
   }
 
@@ -12832,8 +13044,11 @@ iframe {
 }
 
 .video-description{
-  height: 100px;
-  margin: 0 35px;
+    height: 100px;
+    margin: 0 35px;
+    font-size: 20px;
+    width: 550px;
+    text-align: left;
 }
 
   .more-info-sec{
@@ -12855,7 +13070,7 @@ iframe {
 }
 
 .wellness-p{
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 300;
 }
 
@@ -12863,8 +13078,8 @@ iframe {
   position: static;
 }
 
-.footer_text_bottom{
-  font-size: 100px;
+.footer_text_bottom {
+  font-size: 150px;
 }
 
 .explore_boxes{
@@ -12910,7 +13125,38 @@ iframe {
 .vr-steps .p-steps{
   width: 650px;
 }
+.vid-section{
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
 
+.why-now-p{
+  font-size: 20px;
+}
+
+#lmb-2{
+  padding: 23px 50px;
+}
+
+.homepage-hero {
+  height: 503px;
+}
+
+.bg-gradient-primary-to-secondary1 {
+  width: 658px;
+  height: 300px;
+}
+
+.container-about-this-guide {
+  width: 0px;
+  margin-left: 70px
+}
+
+#mapi{
+  margin: 0 auto;
+  display: flex;
+  width: 800px;
+}
 }
 
 
@@ -12918,11 +13164,51 @@ iframe {
 @media only screen and (min-width: 1100px) {
   .bg-gradient-primary-to-secondary1{
     width: 850px;
-    height: 400px;
+    height: 492px;
+  }
+
+  .guide-text-footer {
+    font-size: 4em;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 100px;
+    text-align: start;
+}
+
+  #mapi{
+    margin: 0 auto;
+    display: flex;
+    width: 1000px;
+  }
+
+  .homepage_vid_prop{
+    height:600px;
+    width: 1600px;
+  }
+
+  .container-about-this-guide h2{
+    padding: 50px;
+  }
+
+  .hero-section h1{
+    width: 659px;
+    font-size: 92px;
+    top: -75px;
   }
 
   .homepage-hero {
     height: 600px;
+}
+
+
+.hero-btn{
+  margin: 0;
+  top: -50px;
+}
+
+.container-about-this-guide p {
+  font-size: 36px;
+  width: 754px;
 }
 
 .bs-container{
@@ -12938,10 +13224,17 @@ iframe {
   border-radius: 10px;
 }
 
+.vid-section{
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+.video-header, .vid-h3{
+  font-size: 50px;
+}
 
 .why-now{
   margin: 0 auto;
-  padding-left: 154px;
+  padding-left: 67px;
   justify-content: left;
 }
 
@@ -12951,6 +13244,7 @@ iframe {
 
 .footer_text_bottom{
   font-size: 200px;
+  margin: 0;
 }
 
 /*page-1*/
@@ -12973,19 +13267,45 @@ iframe {
 
 .getting-started_vr_h3{
   font-size: 128px;
+  margin-bottom: 157px;
 }
 .choosing_vr-h3 {
   font-size: 96px;
+ 
 }
 
 .vr-steps{
   padding-left: 200px;
+}
+
+.why-now h3{
+  font-size: 128px;
+}
+
+.why-now-p{
+  font-size: 30px;
+  width: 1000px;
+}
+
+#exp-btn {
+  position: relative;
+  left: 2px;
+  font-size: 0.8rem;
+  top: -72px;
 }
 }
 
 
 @media only screen and (min-width: 1200px) {
 
+
+  .hero-section h1 {
+    width: 678px;
+    font-size: 92px;
+    margin-left: 4px;
+}
+
+ 
   .bs-container{
     display: flex;
     margin: auto;
@@ -13000,7 +13320,7 @@ iframe {
   
   
   .video-description{
-    width: 500px;
+    width: 552px;
   }
   
   /* .welness-container{
@@ -13014,7 +13334,7 @@ iframe {
   } */
 
   .wellness_img_homepage {
-    width: 651px;
+    width: 627px;
     height: 522px;
 }
 
@@ -13031,7 +13351,8 @@ iframe {
   
   .hero-btn{
     margin: 0;
-    margin-top: 47px;
+    top: -50px;
+    left: 90px;
   }
 
 
@@ -13055,11 +13376,12 @@ iframe {
   }
 
   .choosing_vr-h3 {
-    font-size: 96px;
+    font-size: 60px;
   }
 
   #accordian {
     width: 1149px;
+    margin: 0 auto;
   }
 
   #accordian li label {
@@ -13126,7 +13448,6 @@ text-align: center;
   font-size: 36px;
 }
 .img-vr-steps{
-  border: 2px solid red;
   width: 534px;
   padding-right: 100px;
   height: 396px;
@@ -13136,7 +13457,6 @@ text-align: center;
 
 
 .long-img-vr-steps{
-  border: 2px solid red;
   width: 1000px;
   height: 450px;
   display: flex;
@@ -13161,20 +13481,56 @@ text-align: center;
   #learning-h3{
     width: 1050px;
   }
+  #exp-btn {
+    position: relative;
+    left: 2px;
+    font-size: 0.8rem;
+    top: -61px;
+    left: 19px;
+}
+
+.explore_section-h3{
+  font-size: 128px;
+}
+
+.guide-text-footer {
+  font-size: 4em;
+  width: 250px;
+  margin-left: 50px;
+  margin-top: 100px;
+  text-align: start;
+}
 }
   
   
 
 
   @media only screen and (min-width: 1500px) {
-    .welness-container{
-   
-      width: 555px;
-      height: 485px;  
-      border-radius: 10px;
-      min-width: 384px;
-      padding: 20px;
+
+    #exp-btn {
+      position: relative;
+      left: 2px;
+      font-size: 0.8rem;
+      top: -37px;
+      left: 96px;
   }
+
+  .guide-text-footer {
+    font-size: 4em;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 100px;
+    text-align: start;
+}
+
+   
+    .welness-container {
+        width: 792px;
+        height: 667px;
+        border-radius: 10px;
+        min-width: 384px;
+        padding: 20px;
+    }
 
   #physicalHealth{
     margin: 0px auto;
@@ -13204,39 +13560,99 @@ text-align: center;
 
   .img-vr-steps{
     margin-right: 100px;
+    width: 45%;
   }
 
-  #img-first-vr{
-    margin-left: 100px;
+  #last-img{
+    width: 50%;
   }
 
-  #social-in-p{
-    margin-bottom: 100px;
+  .video-description{
+    width: 700px;
   }
+
+  .why-now{
+    padding-left: 232px;
+   
+  }
+
+
+  .hero-section {
+    margin: 92px;
+    position: relative;
+    top: -67px;
+    left: -17px;
 }
+
+.hero-section h1 {
+  width: 742px;
+  font-size: 96px;
+}
+
+.homepage-hero {
+  height: 989px;
+}
+
+.hero-btn{
+  padding: 23px 50px;
+  font-size: 20px;
+}
+
+.wellness-header {
+  margin-top: 120px;
+  margin-right: 82px;
+}
+
+
+.wellness-p {
+  text-align: left;
+  margin-left: 86px;
+  width: 606px;
+}
+
+.wellness_img_homepage {
+  width: 795px;
+  height: 698px;
+}
+
+
+#lmb-2 {
+  left: -172px;
+  position: relative;
+  top: 68px;
+}
+
+#exp-btn{
+  padding: 23px 50px;
+  left: 15px;
+}
+
+
+  }
 
 /*desktop*/
 @media only screen and (min-width: 1700px) {
 
-
-  .homepage-hero {
-    height: 100vh;
-  }
+  .guide-text-footer {
+    font-size: 4em;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 100px;
+    text-align: start;
+}
 
   .hero-section{
     top: -111px;
     left: 130px 
   }
 
-  .hero-section h1{
-    font-size: 80px;
-    width: 616px;
-  }
+  .hero-section h1 {
+    width: 742px;
+    font-size: 96px;
+    left: -90px;
+    top: -36px;
+}
 
-  .hero-btn{
-    padding:17px 38px;
-    margin-top:50px;
-  }
 
 
   .bg-gradient-primary-to-secondary1 {
@@ -13320,5 +13736,19 @@ text-align: center;
     position: relative;
     top: 39px;
   }
+
+  .hero-btn {
+    padding: 21px 47px;
+    left: -1px;
+    top: 20px;
+}
+
+.guide-text-footer {
+    font-size: 4em;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 100px;
+    text-align: start;
+}
 
 }

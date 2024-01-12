@@ -11,8 +11,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+          <!-- font awesome icon -->
+  <script src="https://kit.fontawesome.com/40d02c2cc9.js" crossorigin="anonymous"></script>
+
+    
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjp3-ryV6aUlHT1oC-53S4edAi0IrZCHM&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -26,7 +35,7 @@
                 <div class="collapse navbar-collapse mobile-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0 mobile-navabr">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="page-one.html">Introudction</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="page-one.html">Introduction</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="page-two.html">VR Set Up Guide</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="page-three.html">Benefits</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="page-four.html">Resources</a></li>
@@ -53,18 +62,18 @@
         <!-- Quote/testimonial aside-->
         <aside class="vr_matters">
             <div class="vr_m_container">
-                <h2>Why VR matters for seniors ?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                <h2>What is VR?</h2>
+                <p> A virtual reality device is made to be worn over your eyes and allows you to see and interact with an artificially simulated world through its lenses, making you feel as if you have stepped into a different world beyond imagination. The device comes in the form of a specially designed type of headset or goggles with computer hardware and software components fit into them to create a computer-generated and intractable environment (Sheldon, 2022). The device can be used to play virtual reality games, take part in virtual tours of places, use it for training in medical fields, etc.</p>
             </div>
-            <button class="hero-btn btn-hero-pg1" >Learn more</button>
+            
         </aside>
 
 
         <section class="getting-started_vr">
             <h3 class="getting-started_vr_h3">Getting started  with VR</h3>
-            <p class="getting-started_vr_p"> Lorem ipsum dolor sit amet, consectetur    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud . click the button below to find out more about the benefits Or i could say there are various factors to consider when getting started with VR , like picking the right VR headset, equipment, apps and more. to find out more navigate through this accordion down below to take your first steps in to virtual reality</p>
+            <p class="getting-started_vr_p"> Getting started with VR for your first time can be difficult to, so before you decide to purchase your first VR headset, there are various factors to consider, like picking the right VR headset, equipment compatible to your needs and more. To find out more navigate through this accordion down below to take your first steps in to virtual reality scene.</p>
 
-            <button class="hero-btn btn-hero-pg1" >Learn more</button>
+            <button class="hero-btn btn-hero-pg1 " id="gt-btn" >Learn more</button>
         </section>
 
 
@@ -75,58 +84,100 @@
                 <label for="first">Recommended types of VR headsets <span>&#x3e;</span></label>
                 <input type="radio" name="accordian" id="first" checked>
                 <div class="content">
+                    <br>
                     <p>These are VR headsets that dont require any connection to a Personal computer to use with it therefore are called stand-alone headsets. Despite this, they can still be connected to a PC to play PC VR games and experiences  These vr headsets need to be charged just like smartphones as they run off their own software and  components.</p>
 
-                    <h4>Advantages</h4>
-                    <p>ease of use - light weight, easy to set up</p>
-                    <p> portability</p>
-                    <p> compatibility - most can be used with PC’s</p>
-                    <p> user friendly interface</p>
-                    <p> affordability - compared to other vr systems like PC VR headsets, these headsets are priced at a much reasonable price.</p>
-                    <p>  wireless</p>
-                    <p> additional accessories can be bought to improve comfort and fit</p>
-                    <h4>  Disadvantages</h4>
-                    <p> battery life - as they are battery powered stand-alone headsets, they require to be charged </p>
-                    <p> processing power- they have lower processing power compared to High end PC VR headsets, which means lower quality and performance.</p>
-                    <p> limited content compared to PC VR headsets as they have the capability to play PC VR games</p>
-                    <h4> Price</h4>
-                    <p> meta quest 2 - £249.99</p>
-                    <p> pico 4 - £339</p>
-                    <p> meta quest 3- £479 (128gb model) £619 (512gb model)</p>
-                 
-                   
 
+                    <ul>
+                        <h4>Advantages</h4>
+                        <li>ease of use - light weight, easy to set up</li>
+                        <li>portability</li>
+                        <li>compatibility - most can be used with PC's</li>
+                        <li>user friendly interface</li>
+                        <li>affordability - compared to other vr systems like PC VR headsets, these headsets are priced at a much reasonable
+                            price.</li>
+                        <li>wireless</li>
+                        <li>additional accessories can be bought to improve comfort and fit</li>
+                    </ul>
 
-                    <div class="small-box">
-                        <h4>Explore our top picks</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sed ut amet atque</p>
-                    </div>
+                    <ul>
+                        <h4> Disadvantages</h4>
+                        <li>battery life - as they are battery powered stand-alone headsets, they require to be charged </li>
+                        <li>processing power- they have lower processing power compared to High end PC VR headsets, which means lower
+                            quality and performance.</li>
+                        <li>limited content compared to PC VR headsets as they have the capability to play PC VR games</li>
 
-                    <h4>Explore more VR headsets? </h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores reprehenderit facere neque dolorum? Similique porro iste error ea eum nesciunt at beatae harum. Quo repudiandae eum harum modi vero animi?</p>
+                    </ul>
+
+                    <ul>
+                        <h4> Price</h4>
+                        <li>meta quest 2 - £249.99</li>
+                        <li>pico 4 - £339</li>
+                        <li>meta quest 3- £479 (128gb model) £619 (512gb model)</li>
+                        <li>valve index - £919(full kit)</li>
+                    </ul>
+            
                 </div> 
             </li>
             <li>
-                <label for="second">Recommended VR equipment and accessories<span>&#x3e;</span></label>
+                <label for="second">Recommended VR accessories<span>&#x3e;</span></label>
                 <input type="radio" name="accordian" id="second">
                 <div class="content">
-                    
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores reprehenderit facere neque dolorum? Similique porro iste error ea eum nesciunt at beatae harum. Quo repudiandae eum harum modi vero animi?</p>
+                    <br>
+                    <h4>controller straps/grips</h4>
+                    <p>these are perfect to prevent accidental drops and these grips improve the overall control for seniors during any movements in virtual reality</p>
+                    <p><strong>price</strong> £15-£30</p>
+                    <br>
+                    <h4>prescription lens inserts</h4>
+                    <p>To improve your experience even more, these are a key for seniors with prescription glasses. You can easily attach them on top of the VR lenses. Prescription lens insets increases the field of view for glasses wearers and improves the comfort levels drastically. </p>
+                    <p><strong>price</strong> £40-£75 + </p>
+                    <br>
+                    <h4> Head strap</h4>
+                    <p>This improves the comfort of the VR headset overall</p>
+                    <p><strong>price</strong> £30-£40 </p>
                 </div> 
             </li>
             <li>
                 <label for="third">Our top picks<span>&#x3e;</span></label>
                 <input type="radio" name="accordian" id="third">
                 <div class="content">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores reprehenderit facere neque dolorum? Similique porro iste error ea eum nesciunt at beatae harum. Quo repudiandae eum harum modi vero animi?</p>
+                    <br>
+                    <p><strong>Meta Quest 3</strong> -  This is the top pick because its the latest VR headset, meaning it has all the upgrades and necessities required for your needs, from comfort to an enhance in quality and performance, this headset is the best to buy for seniors looking to starting their 
+                        VR journey.</p>
+                    <p><strong>Head strap</strong> - This makes comfort levels improve drastically as the default head straps that come with any vr headsets are ok but a head strap bought separately offers more in terms of comfort.</p>
                 </div> 
             </li>
         </ul>
         </section>
 
 
+        <div class="map">
+            <h3>Try before you buy</h3>
+            <p>There are many places that offer VR experiences in Manchester</p>
+        </div>
 
-    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19002.79342795758!2d-2.3667624256836075!3d53.462219399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487baf17adf9d2cd%3A0x314b7abbb6993286!2smeetspaceVR%20(ft%20Zero%20Latency)!5e0!3m2!1sen!2suk!4v1705073307458!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapi"></iframe>
+
+
+          <!-- Footer-->
+  <footer class="social-contact_us">
+
+    <p class="guide-text-footer">
+      Guide For Seniors.
+    </p>
+
+  <div class="social-contact_us_container-icon">
+    <a href="#" class="icon twitter" target="_blank" rel=""><i class="fa-brands fa-x-twitter fa-2xl"
+      style="color: #ffffff;"></i><span class="twitt">Twitter</span></a>
+      <a href="#" class="icon instagram" target="_blank" rel=""><i class="fa-brands fa-instagram fa-2xl"
+        style="color: #ffffff;"></i><span class="insta">instagram</span></a>
+    <a href="#" class="icon facebook" target="_blank" rel=""><i class="fa-brands fa-facebook fa-2xl"
+        style="color: #ffffff;"></i><span class="faceb">Facebook</span></a>
+  </div>
+  <p class="footer_text_bottom">agewellvr</p>
+</footer>
+          
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
