@@ -87,6 +87,8 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 
@@ -11692,7 +11694,9 @@ footer a:hover, footer a:active, footer a:focus {
 
 
 
-
+.why-now-p {
+  font-weight: 400;
+}
 
 /*---------------------- about this guide ------------------ */
 
@@ -11730,6 +11734,20 @@ footer a:hover, footer a:active, footer a:focus {
 /* -------------------- video section ---------------------- */
 
 
+.references{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.references p{
+ display: flex;
+ margin: 50px;
+ width: 800px;
+}
 
 
 .video-header, h3{
@@ -11831,6 +11849,8 @@ footer a:hover, footer a:active, footer a:focus {
   padding-bottom: 50px;
 
 }
+
+
 
 
 .explore_title{
@@ -12169,9 +12189,7 @@ i {
   }
   */
 
-  #mainNav{
-    padding: 40px;
-  }
+
 
   .logo{
     height: 40px;
@@ -12216,6 +12234,16 @@ i {
     left: 6px;
     font-size: 0.8rem;
   }
+
+  #exp-btn {
+    
+    position: relative;
+    left: 3px;
+    font-size: 0.8rem;
+    top: -57px;
+    padding: 15px 30px;
+}
+
 
   /*------------------------------part1 -end ---------*/
   /*about this guide*/
@@ -12399,10 +12427,11 @@ i {
 /*page-2*/
 
 
-.vr-steps{
+.vr-steps {
   margin: 0 auto;
   text-align: center;
-  }
+  padding: 0 30px;
+}
   .vrx-h1{
     text-align: center;
     width: auto;
@@ -12468,14 +12497,24 @@ i {
 
 
 @media only screen and (min-width: 200px) {
-  .vr_m_container h2{
+  .vr_m_container h2 {
     font-size: 2rem;
-    margin: 50px;
-  }
+    margin: 11px;
+}
 
   .vr_m_container p{
     font-size: 1rem;
   }
+
+  .content p{
+    font-size: 16px;
+  }
+
+  #accordian li{
+    font-size: 16px;
+  }
+
+
 
   .getting-started_vr_p{
     margin: auto;
@@ -12486,12 +12525,18 @@ i {
     margin-bottom: 50px;
   }
 
-  .btn-hero-pg1{
+  .btn-hero-pg1 {
     padding: 15px;
     position: relative;
     top: 39px;
-    left: 22px;
-  }
+    left: 46px;
+}
+
+#accordian {
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+}
 
   .getting-started_vr{
     height: auto;
@@ -12510,9 +12555,9 @@ i {
     font-size: 2rem;
   }
 
-  #accordian li label{
-    font-size: 1rem;
-  }
+  #accordian li label {
+    font-size: 0.9rem;
+}
 
   .content .small-box{
     width: auto;
@@ -12545,6 +12590,14 @@ i {
     padding-bottom: 50px;
   }
 
+  
+  #exp-btn {
+    position: relative;
+    left: 3px;
+    font-size: 0.8rem;
+    top: -23px;
+    padding: -1px 6px;
+}
   .vrx-p{
     width: auto;
     padding-bottom: 50px;
@@ -12561,8 +12614,12 @@ i {
     font-size: 32px;
   }
 
+  .why-now h3{
+    font-size: 40px
+  }
+
   .vr-steps .vr-steps-h3{
-    font-size: 32px;
+    font-size: 25px;
     width: auto;
   }
 
@@ -12573,9 +12630,7 @@ i {
   .long-img-vr-steps{
     width: 250px;
   }
-  .img-vr-steps{
-    width: 250px;
-  }
+ 
 
   .explore_boxes{
     width: 250px;
@@ -12583,8 +12638,12 @@ i {
   }
 
   .explorebx{
-    margin: 0;
-    padding: 20px;
+    margin: 10px;
+    padding: 0;
+  }
+
+  .explore_border h3{
+    font-size: 30px;
   }
 
   #mapi{
@@ -12597,7 +12656,53 @@ i {
 
   .guide-text-footer{
     font-size: 2em;
+    width: 200px;
   }
+
+  .bg-gradient-primary-to-secondary1 {
+    width: 250px;
+    height: 400px;
+}
+
+  .container-about-this-guide h2{
+    font-size: 20px;
+    padding-left: 0;
+    width: 160px;
+  }
+
+  .container-about-this-guide p{
+    margin-left: 0;
+  }
+
+  .hero-h1 {
+    width: 207px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -25px;
+    left: 6px;
+}
+
+.wellness_img_homepage{
+  width: 250px;
+}
+
+.welness-container{
+  width: 250px;
+}
+
+iframe{
+  width: 250px;
+}
+
+.explorebx img {
+  width: 250px;
+}
+
+
+.img-vr-steps {
+  display: none;
+}
 
 }
 
@@ -12612,6 +12717,27 @@ i {
     margin-left: 50px;
     margin-top: 100px;
     text-align: start;
+}
+
+
+.welness-container {
+  width: 306px;
+}
+
+.container-about-this-guide p {
+  font-size: 14px;
+  width: 331px;
+  height: 185px;
+  margin-left: 20px;
+}
+
+.bg-gradient-primary-to-secondary1 {
+  height: 305px;
+  width: 370px;
+}
+
+.wellness_img_homepage{
+  width: 350px;
 }
 
   .vr-f-step{
@@ -12652,6 +12778,7 @@ i {
   }
   .img-vr-steps{
     width: 350px;
+    display: block;
   }
 
   #exp-btn {
@@ -12672,6 +12799,21 @@ i {
   }
 
 
+  .explorebx img {
+    width: 313px;
+}
+
+.img-vr-steps {
+  width: 374px;
+  height: 221px;
+  display:block;
+}
+
+.references p{
+  display: flex;
+  margin: 50px;
+  width: 350px;
+ }
   
 }
 
@@ -12689,6 +12831,13 @@ i {
 
   .bg-gradient-primary-to-secondary1 {
     width: 450px;
+    height: 300px;
+}
+
+.img-vr-steps {
+  width: 444px;
+  height: 250px;
+  display: block;
 }
 
 .container-about-this-guide p {
@@ -12802,7 +12951,8 @@ i {
 
 .img-vr-steps{
   width: 398px;
-  height: 300px
+  height: 300px;
+  display:block;
 }
 
 .vr-steps .vr-steps-h3{
@@ -12847,7 +12997,30 @@ i {
   font-size: 80px;
 }
 
+.content p {
+  font-size: 24px;
+  line-height: 1.5;
+}
 
+#accordian li label {
+  font-size: 36px;
+}
+
+#accordian li {
+  font-size: 24px;
+}
+
+.img-vr-steps {
+  width: 490px;
+  height: 300px;
+  display: block;
+}
+
+.references p{
+  display: flex;
+  margin: 50px;
+  width: 400px;
+ }
 
 }
 
@@ -12867,6 +13040,10 @@ i {
     text-align: start;
 }
 
+.welness-container {
+  width: 306px;
+}
+
   .why-now{
     margin: 10px 20px 0px 20px;
   }
@@ -12883,6 +13060,7 @@ i {
 
 .bg-gradient-primary-to-secondary1 {
   width: 500px;
+  height: 261px;
 }
 
 
@@ -12907,13 +13085,10 @@ i {
 
 .img-vr-steps{
   width: 398px;
-  height: 300px
+  height: 300px;
+  display:block;
 }
 
-#ex-btn{
-  left: 0px;
-  top: -7px;
-}
 
 .homepage_vid_prop{
   height: 782px;
@@ -12948,17 +13123,35 @@ i {
   font-size: 100px;
 }
 
+.img-vr-steps {
+    width: 542px;
+    height: 300px;
+    display: block;
+}
+
+.references p{
+  display: flex;
+  margin: 50px;
+  width: 500px;
+ }
+
 }
 
 
 
 /*tablet version --------------------------------------*/
-@media only screen and (min-width: 758px) {
+@media only screen and (min-width: 750px) {
   .hero-section {
     margin: 92px;
     position: relative;
     top: -127px;
 }
+
+.references p{
+  display: flex;
+  margin: 50px;
+  width: 700px;
+ }
 
 .guide-text-footer {
   font-size: 4em;
@@ -12972,8 +13165,8 @@ i {
   width: 500px;
 }
 
-.explorebx{
-  width: 476px;
+.explorebx {
+  width: 437px;
 }
 
 .explorebx img{
@@ -12983,7 +13176,7 @@ i {
 
 #exp-btn {
   position: relative;
-  left: 2px;
+  left: 9px;
   font-size: 0.8rem;
   top: -37px;
 }
@@ -13007,8 +13200,8 @@ i {
   left: 0px;
 }
 
-.hero-btn{
-  top: -60px;
+.hero-btn {
+  top: 7px;
 }
 
 
@@ -13043,12 +13236,12 @@ iframe {
   margin: 0;
 }
 
-.video-description{
-    height: 100px;
-    margin: 0 35px;
-    font-size: 20px;
-    width: 550px;
-    text-align: left;
+.video-description {
+  height: 100px;
+  margin: 0 35px;
+  font-size: 20px;
+  width: 750px;
+  text-align: left;
 }
 
   .more-info-sec{
@@ -13144,7 +13337,7 @@ iframe {
 
 .bg-gradient-primary-to-secondary1 {
   width: 658px;
-  height: 300px;
+  height: 411px;
 }
 
 .container-about-this-guide {
@@ -13157,6 +13350,12 @@ iframe {
   display: flex;
   width: 800px;
 }
+
+.img-vr-steps {
+  width: 753px;
+  height: 417px;
+  display: block;
+}
 }
 
 
@@ -13164,8 +13363,14 @@ iframe {
 @media only screen and (min-width: 1100px) {
   .bg-gradient-primary-to-secondary1{
     width: 850px;
-    height: 492px;
+    height: 830px;
   }
+
+  .img-vr-steps {
+    width: 753px;
+    height: 417px;
+    display: block;
+}
 
   .guide-text-footer {
     font-size: 4em;
@@ -13182,8 +13387,8 @@ iframe {
   }
 
   .homepage_vid_prop{
-    height:600px;
-    width: 1600px;
+    height:800px;
+    width: 1500px;
   }
 
   .container-about-this-guide h2{
@@ -13201,9 +13406,10 @@ iframe {
 }
 
 
-.hero-btn{
+
+.hero-btn {
   margin: 0;
-  top: -50px;
+  top: 20px;
 }
 
 .container-about-this-guide p {
@@ -13218,7 +13424,7 @@ iframe {
 
 .welness-container{
   width: 570px;
-  height: 451px;
+  height: 534px;
   margin: 0  auto;
   justify-content: center;
   border-radius: 10px;
@@ -13282,9 +13488,10 @@ iframe {
   font-size: 128px;
 }
 
-.why-now-p{
+.why-now-p {
   font-size: 30px;
   width: 1000px;
+  font-weight: 300;
 }
 
 #exp-btn {
@@ -13305,6 +13512,16 @@ iframe {
     margin-left: 4px;
 }
 
+.wellness-p{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.hero-btn {
+  margin: 0;
+  top: 10px;
+  left: 1px;
+}
  
   .bs-container{
     display: flex;
@@ -13319,9 +13536,9 @@ iframe {
   
   
   
-  .video-description{
-    width: 552px;
-  }
+  .video-description {
+    width: 1103px;
+}
   
   /* .welness-container{
    
@@ -13349,11 +13566,11 @@ iframe {
     padding-top: 34px;
   }
   
-  .hero-btn{
+  .hero-btn {
     margin: 0;
-    top: -50px;
-    left: 90px;
-  }
+    top: 10px;
+    left: 7px;
+}
 
 
   /*page1*/
@@ -13392,9 +13609,6 @@ iframe {
   font-size: 32px;
 }
 
-.content p{
-  font-size: 24px;
-}
 
 
 /*page-2*/
@@ -13500,6 +13714,18 @@ text-align: center;
   margin-top: 100px;
   text-align: start;
 }
+
+.choosing_vr-h3 {
+  font-size: 50px;
+
+  
+}
+
+.references p{
+  display: flex;
+  margin: 50px;
+  width: 800px;
+ }
 }
   
   
@@ -13514,6 +13740,10 @@ text-align: center;
       top: -37px;
       left: 96px;
   }
+
+  .video-description {
+    width: 1103px;
+}
 
   .guide-text-footer {
     font-size: 4em;
@@ -13561,6 +13791,7 @@ text-align: center;
   .img-vr-steps{
     margin-right: 100px;
     width: 45%;
+    display: block;
   }
 
   #last-img{
@@ -13568,7 +13799,7 @@ text-align: center;
   }
 
   .video-description{
-    width: 700px;
+    width: 1103px;
   }
 
   .why-now{
@@ -13593,9 +13824,10 @@ text-align: center;
   height: 989px;
 }
 
-.hero-btn{
-  padding: 23px 50px;
-  font-size: 20px;
+.hero-btn {
+  margin: 0;
+  top: 1px;
+  left: 1px;
 }
 
 .wellness-header {
@@ -13627,6 +13859,12 @@ text-align: center;
   left: 15px;
 }
 
+.references p{
+  display: flex;
+  margin: 50px;
+  width: 800px;
+ }
+
 
   }
 
@@ -13635,11 +13873,17 @@ text-align: center;
 
   .guide-text-footer {
     font-size: 4em;
-    width: 250px;
+    width: 250px; 
     margin-left: 50px;
     margin-top: 100px;
     text-align: start;
 }
+
+#exp-btn{
+  left: -87px;
+}
+
+
 
   .hero-section{
     top: -111px;
@@ -13672,7 +13916,7 @@ text-align: center;
 
   .container-about-this-guide p {
     margin-left: 71px;
-    margin-top: 348px;
+    margin-top: 209px;
     font-size: 36px;
     width: 1150px;
   }
@@ -13727,7 +13971,7 @@ text-align: center;
   }
 
   .why-now-p{
-    font-size: 36px;
+    font-size: 30px;
     width: 1109px;
   }
 
@@ -13749,6 +13993,16 @@ text-align: center;
     margin-left: 50px;
     margin-top: 100px;
     text-align: start;
+}
+
+.references p{
+  display: flex;
+  margin: 50px;
+  width: 900px;
+ }
+
+ .video-description{
+  width: 1103px;
 }
 
 }
